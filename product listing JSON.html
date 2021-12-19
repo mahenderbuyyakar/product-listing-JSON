@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product list JSON</title>
+    <link rel="stylesheet" href="product list page style.css">
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/mahenderbuyyakar/PNG-images/main/flavicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- Top header bar start -->
+        <div class="header-top" role="header top">
+            <div class="social-media-img" role="image holder">
+                <img src="./png images/facebook round.png" alt="facebook-icon" role="icon" aria-label="facebook icon">
+                <img src="./png images/youtube.png" alt="youtube-icon" role="icon" aria-label="youtube icon">
+                <img src="./png images/twitter.png" alt="twitter-icon" role="icon" aria-label="twitter icon">
+            </div>
+            <div class="search-box" role="search">
+                <input type="search" name="searchbox" role="form" placeholder="Search Products and Brands"
+                    aria-labelledby="search-box">
+                <img src="./png images/magglass.png" alt="search-icon" role="icon" aria-label="magnifying glass icon">
+            </div>
+            <div class="details-section" role="details container">
+                <img src="./png images/contact icon.png" alt="call-icon" role="icon" aria-label="contact icon">
+                <a id="contact-number" href="" role="link">+91
+                    9838203708</a>
+                <a href="" role="link">Sell on Company</a>
+                <a href="" role="link">Download App</a>
+                <img src="./png images/langicon.png" id="flag-icon" alt="language-icon" role="icon"
+                    aria-label="language icon">
+                <form action="" aria-label="form">
+                    <select name="language-select" id="language-select" aria-labelledby="select box">
+                        <option value="India" role="option" aria-labelledby="Option1">India</option>
+                        <option value="UK" role="option" aria-labelledby="Option1">UK</option>
+                        <option value="Germany" role="option" aria-labelledby="Option2">Germany</option>
+                        <option value="France" role="option" aria-labelledby="Option3">France</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <!-- Top header Bar end -->
+
+        <!-- Bottom Header start -->
+        <div class="sticky-bar bg-white" id="sticky-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <img src="./png images/logo.png" alt="Swag Of India icon" class="swag-logo">
+                    <div class="input-group d-xl-none d-lg-none" id="search-box-container">
+                        <input type="search" id="search-box-hidden" class="form-control" placeholder="Search products"
+                            aria-label="search box" aria-describedby="basic-addon1">
+                        <span id="basic-addon1"><img src="./png images/magglass.png" alt="search-icon" role="icon"
+                                aria-labelledby="magnifying glass icon">
+                        </span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                    <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form>
+                            <button type="button" class="btns" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                SIGN IN
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Login page modal start-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./png images/logo.png" alt="Swag Of India icon" class="logo-india">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <!-- Login tab -->
+                            <li class="navs-item" role="presentation">
+                                <button class="navs-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#home"
+                                    type="button" role="tab" aria-controls="login" aria-selected="true">LOGIN</button>
+                            </li>
+                            <!-- Create account tab -->
+                            <li class="navs-item" role="presentation">
+                                <button class="navs-link" id="tab2" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="create-account" aria-selected="false">CREATE
+                                    ACCOUNT</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="login-tab">
+                                <form action="#">
+                                    <p class="email">Email</p>
+                                    <input type="text" class="box" id="email" value="" placeholder="Enter mail"><br>
+                                    <p class="password">password</p>
+                                    <input type="password" class="box" name="password" id="password"
+                                        placeholder="Password"><br>
+                                    <button type="button" class="btn-signin">SIGNIN</button><br>
+                                    <button type="button" class="forgot-button">FORGOT YOUR PASSWORD?</button>
+                                    <!-- footer in login page -->
+                                    <p class="text-login">Or Login With</p>
+                                    <div class="media-icons">
+                                        <img src="./png images/login modal fb icon.png" alt="facebook image">
+                                        <img src="./png images/login modal twitter icon.png" alt="Twitter icon">
+                                        <img src="./png images/login modal google icon.png" alt="google icon">
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                aria-labelledby="create-account-tab">
+                                <p class="username">Username</p>
+                                <input type="text" class="box" id="Username" value="" placeholder="Enter Username"><br>
+                                <p class="email">Email</p>
+                                <input type="text" class="box" id="email" value="" placeholder="Enter email"><br>
+                                <p class="password">password</p>
+                                <input type="password" class="box" name="password" id="password"
+                                    placeholder="Password"><br>
+                                <button type="button" class="btn-signin">CREATE ACCOUNT</button><br>
+                                <!-- footer in Create account page -->
+                                <p class="text-login">Or Login With</p>
+                                <div class="media-icons">
+                                    <img src="./png images/login modal fb icon.png" alt="facebook image">
+                                    <img src="./png images/login modal twitter icon.png" alt="Twitter icon">
+                                    <img src="./png images/login modal google icon.png" alt="google icon">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Login page model end -->
+
+    <a href="#">
+        <img src="./png images/go to top icon.png" alt="Go to top icon" class="go-to-top" id="scroll-btn"></a>
+
+    <!-- Bottom header bar end -->
+
+    <!-- Product List Page Start -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="#">Home</a></li>
+            <li class="breadcrumb-item font-weight-bold active" aria-current="page">All Products</li>
+        </ol>
+    </nav>
+    <div id="main">
+        <aside class="left-main-container">
+            <h5>FILTERS</h5>
+            <div class="categories mt-4">
+                <h6>CATEGORIES</h6>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Kurtas (2892)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Kurta sets (9071)</label>
+            </div>
+            <div class="brand mt-4">
+                <h6>BRAND</h6>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Anouk (2892)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Sangria (9047)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">W (1599)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Biba (1440)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Libas (2345)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Anouk (23443)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Sangria (23421)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">W (5674)</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Biba (9087)</label>
+            </div>
+            <div class="price mt-4">
+                <h6>PRICE</h6>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Rs.239 to Rs.1500</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Rs.1500 to Rs.15000</label><br>
+                <input type="checkbox" name="Kurtas" id="clothing"><label for="clothing">Rs.15000 to
+                    Rs.30000</label><br>
+            </div>
+            <div class="discount mt-4">
+                <h6>DISCOUNT RANGE</h6>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Anouk (8921)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Sangria (9071)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">W (1599)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Biba (1440)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">West (2345)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Aries (23443)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Kushal (23421)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Lorem (5674)</label><br>
+                <input type="radio" name="Kurtas" id="clothing"><label for="clothing">Ipsum (9087)</label><br>
+            </div>
+        </aside>
+        <main class="right-main-container">
+            <div
+                class="top-box d-flex flex-lg-row flex-md-row flex-sm-column justify-content-lg-between justify-content-md-between align-items-sm-center justify-content-sm-center">
+                <h5>ALL PRODUCTS</h5>
+                <select name="popular" id="pop-items">
+                    <optgroup>
+                        <option value="Popularity">Sort by : Popularity</option>
+                        <option value="Price">Sort by : Price</option>
+                        <option value="Discount">Sort by : Discount</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="row" id="productListArea">
+                    <!-- Product Lists are coming from JSON server -->
+                </div>
+                <p class="offer text-center mt-3 mb-5">Showing 18 - 25 out of 76 items</p>
+                <div class="row" id="productListArea2">
+                    <!-- Product Lists are coming from JSON server -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Product List Page End -->
+
+
+    <!-- Start of Payment and Help -->
+    <section class="payment-help mt-5" aria-label="payments and help section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center">
+                    <img src="./png images/payments icon.png" alt="securepay" role="img" aria-label="secure pay image">
+                    <h2>100% SECURE PAYMENTS</h2>
+                    <p>secure bank transactions on website.<br>
+                        payments are under encrypted network.</p>
+                </div>
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center">
+                    <img src="./png images/trust pay icon.png" alt="trustpay" role="img" aria-label="trust pay image">
+                    <h2>TRUST PAY</h2>
+                    <p>It secures instant bank transfers<br>
+                        which leads secure.</p>
+                </div>
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center">
+                    <img src="./png images/help center icon.png" alt="helpcenter" role="img"
+                        aria-label="help center image">
+                    <h2>HELP CENTER</h2>
+                    <p>Call if user have any queries<br>
+                        or email us.</p>
+                </div>
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center">
+                    <img src="./png images/shop on the go icon.png" alt="shopongo" role="img"
+                        aria-label="shop on go image">
+                    <h2>SHOP ON THE GO</h2>
+                    <p>It has online shopping with<br>
+                        home delivery of collections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Payments and Help -->
+
+    <!-- Footer Start -->
+    <footer class="mt-5">
+        <div class="container-fluid w-75">
+            <div class="row">
+                <div
+                    class="col col-xl-2 col-lg-3 col-md-3 col-sm-4 d-flex flex-column align-items-start justify-content-start">
+                    <h3>POLICY INFO</h3>
+                    <a href="" role="link">Privacy Policy</a>
+                    <a href="" role="link">Terms of Sale</a>
+                    <a href="" role="link">Terms of Use</a>
+                    <a href="" role="link">Report Abuse and
+                        Takedown Policy</a>
+                </div>
+                <div class="col col-xl-2 col-lg-3 col-md-2 col-sm-3 d-flex flex-column align-items-start">
+                    <h3>COMPANY</h3>
+                    <a href="" role="link">About Us</a>
+                    <a href="" role="link">Core Values</a>
+                    <a href="" role="link">Careers</a>
+                    <a href="" role="link">Blog</a>
+                    <a href="" role="link">Site Map</a>
+                </div>
+                <div class="col col-xl-3 col-lg-3 col-md-4 col-sm-5 d-flex flex-column align-items-start">
+                    <h3>SNAPDEAL BUSINESS</h3>
+                    <a href="" role="link">Shopping App</a>
+                    <a href="" role="link">Sell on Snapdeal</a>
+                    <a href="" role="link">Advertise on
+                        Snapdeal</a>
+                    <a href="" role="link">Media Enquiries</a>
+                    <a href="" role="link">Be an Affiliate</a>
+                </div>
+                <div
+                    class="col col-xl-2 col-lg-3 col-md-3 col-sm-4 mt-md-0 mt-sm-5 d-flex flex-column align-items-start">
+                    <h3>NEED HELP ?</h3>
+                    <a href="" role="link">Contact Us</a>
+                    <a href="" role="link">FAQ</a>
+                    <a href="" role="link">Online Shopping</a>
+                </div>
+                <div class="col col-xl-3 col-lg-5 col-md-6 col-sm-7 mt-xl-0 mt-lg-5 mt-md-5 mt-sm-5">
+                    <h3>SUBSCRIBE</h3>
+                    <div class="input-group mb-2 d-flex justify-content-center align-items-center">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-outline-secondary d-flex align-items-center" type="button"
+                            id="button-addon2">Search</button>
+                    </div>
+                    <small>Register now to get updates on promotions and coupons.<br> Or <a href="">Download
+                            App</a></small>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="bottom-footer container-fluid w-75">
+            <div class="row">
+                <div class="col d-flex flex-row justify-content-between">
+                    <div class="box-1">
+                        <h3>PAYMENT</h3>
+                        <div class="card-holder">
+                            <img src="./png images/payment card1.png" alt="card1" role="icon" aria-label="card image">
+                            <img src="./png images/payment card2.png" alt="card2" role="icon" aria-label="card image">
+                            <img src="./png images/payment card3.png" alt="card4" role="icon" aria-label="card image">
+                            <img src="./png images/payment card4.png" alt="cod" role="icon" aria-label="card image">
+                            <img src="./png images/payment card5.png" alt="netbanking" role="icon"
+                                aria-label="card image">
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <h3>SOCIAL</h3>
+                        <div class="social-holder">
+                            <img src="./png images/footer fb icon.png" alt="facebook" role="icon"
+                                aria-label="facebook icon">
+                            <img src="./png images/footer twitter icon.png" alt="twitter" role="icon"
+                                aria-label="twitter icon">
+                            <img src="./png images/footer youtube icon.png" alt="youtube" role="icon"
+                                aria-label="youtube icon">
+                            <img src="./png images/footer instagram icon.png" alt="instagram" role="icon"
+                                aria-label="instagram icon">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <!-- Footer End -->
+
+
+
+
+    <script src="swag of india script.js"></script>
+
+</body>
+
+</html>
